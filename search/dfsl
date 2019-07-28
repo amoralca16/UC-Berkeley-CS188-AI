@@ -1,0 +1,12 @@
+dfsl(problema, limite): devuelve una solución o fallo/corte
+    devolver bpl-recursivo(hacer-nodo(estado-inicial[problema], problema, limite)
+
+ funcion bpl-recursivo(nodo,problema, limite) devuelve una solución, o fallo/corte
+    ocurrio un corte<-- falso
+    si test-objetivo[problema][Estado[nodo]) entonces devolver solucion(nodo)
+    en caso contrario si profundidad[nodo]=limite entonces devolver corte
+    en caso contrario para cada sucesor en expandir(nodo,problema) hacer
+    resultado <- bpl-recursivo(sucesor,problema, limite)
+    si resultado = corte entonces ocurrio un corte <- verdaderp
+    en otro casi si resultado=!fallo entonces devolver resultado
+   si ocurrio un corte entonces devolver corte en caso contrario devolver fallo

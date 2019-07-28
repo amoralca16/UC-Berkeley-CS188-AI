@@ -1,0 +1,6 @@
+dfsi(problema) devuelve una solucion o fallo
+entradas:problena
+
+para profundidad <-0 a inf hacer
+resultado<- busqueda-profundidad-limitada(problema, profundidad)
+si resultado =! corte entonces devuelve resultado
